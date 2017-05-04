@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ BruceHurrican
+  ~ Copyright (c) 2016.
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  ~
+  ~    This document is Bruce's individual learning the android demo, wherein the use of the code from the Internet, only to use as a learning exchanges.
+  ~    And where any person can download and use, but not for commercial purposes.
+  ~    Author does not assume the resulting corresponding disputes.
+  ~    If you have good suggestions for the code, you can contact BurrceHurrican@foxmail.com
+  ~    本文件为Bruce's个人学习android的作品, 其中所用到的代码来源于互联网，仅作为学习交流使用。
+  ~    任和何人可以下载并使用, 但是不能用于商业用途。
+  ~    作者不承担由此带来的相应纠纷。
+  ~    如果对本代码有好的建议，可以联系BurrceHurrican@foxmail.com
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bruce.kk.wdemo.MainActivity">
+    <TextView
+        android:id="@+id/tv_ssid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="SSID"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="是否上传"/>
+    <TextView
+        android:id="@+id/tv_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        tools:text="当前设备"/>
+    <TextView
+        android:id="@+id/tv_uploaded_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_upload"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        tools:text="总共120,已经上传 80"/>
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:text="上传数据"/>
+    <Button
+        android:id="@+id/btn_test_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_upload"
+        android:layout_alignBaseline="@id/btn_upload"
+        android:visibility="gone"
+        android:text="测试"/>
+    <Button
+        android:id="@+id/btn_test_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_test_data"
+        android:layout_alignBaseline="@id/btn_test_data"
+        android:visibility="gone"
+        android:text="清除测试数据"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_ssid_title"
+        android:layout_above="@id/tv_uploaded_num">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

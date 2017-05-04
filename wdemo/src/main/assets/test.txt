@@ -1,0 +1,157 @@
+trl_interface=/data/misc/wifi/sockets
+disable_scan_offload=1
+driver_param=use_p2p_group_interface=1
+update_config=1
+device_name=cancro_wc_lte
+manufacturer=Xiaomi
+model_name=MI 4W
+model_number=MI 4W
+serial_number=572cca87
+device_type=10-0050F204-5
+config_methods=physical_display virtual_push_button
+p2p_disabled=1
+p2p_no_group_iface=1
+
+network={
+	ssid="PA_MI NOTE LTE"
+	psk="tx147258"
+	key_mgmt=WPA-PSK
+}
+
+network={
+	ssid=e7baa2e7b1b3e6898be69cba3131
+	psk="123abc456"
+	key_mgmt=WPA-PSK
+	priority=6
+}
+
+network={
+	ssid="Pjj0"
+	psk="qweasdzxc"
+	key_mgmt=WPA-PSK
+	priority=7
+}
+
+network={
+	ssid="atom008"
+	psk="541221507"
+	key_mgmt=WPA-PSK
+	priority=11
+}
+
+network={
+	ssid="Shibuya"
+	psk="20150127"
+	key_mgmt=WPA-PSK
+	pairwise=CCMP TKIP
+	group=CCMP SMS4
+	disabled=1
+}
+
+network={
+	ssid="BL-volte"
+	psk="abc123456"
+	key_mgmt=WPA-PSK
+	pairwise=CCMP TKIP
+	group=CCMP TKIP
+}
+
+network={
+	ssid="makeup"
+	psk="51714323hebe"
+	key_mgmt=WPA-PSK
+	pairwise=CCMP TKIP
+	group=CCMP TKIP
+}
+
+network={
+	ssid="AndroidAPFA46"
+	psk="58187553"
+	key_mgmt=WPA-PSK
+	priority=15
+}
+
+network={
+	ssid="OpenWrt"
+	psk="pinganwifi"
+	key_mgmt=WPA-PSK
+	priority=16
+	disabled=1
+}
+
+network={
+	ssid="and-Business"
+	key_mgmt=NONE
+	priority=29
+	disabled=1
+}
+
+network={
+	ssid="tom22"
+	psk="11111111"
+	key_mgmt=WPA-PSK
+	priority=30
+}
+
+network={
+	ssid="Giaf"
+	psk="lovegiaf"
+	key_mgmt=WPA-PSK
+	priority=31
+}
+
+network={
+	ssid="BhuWiFi-Dao"
+	psk="pinganwifi"
+	key_mgmt=WPA-PSK
+	priority=32
+}
+
+network={
+	ssid=b2ceccefb9c8baabb9fac1cfc0ed
+	bssid=80:81:10:bd:53:b9
+	key_mgmt=NONE
+	priority=33
+}
+
+network={
+	ssid=e68891e8a6815741594f532d57694669
+	bssid=80:81:00:ac:e8:89
+	key_mgmt=NONE
+	priority=34
+}
+
+network={
+	ssid=e9b29ce98193e5a4abefbc8de5a4a7e586b2e5ba97
+	scan_ssid=1
+	psk="woyaoheguozhi"
+	priority=31
+}
+
+network={
+	ssid=e6b0b4e593a5e78496e99da2
+	scan_ssid=1
+	psk="shuigemenmian"
+	priority=33
+}
+
+network={
+	ssid="YTC-KJYD-SY"
+	scan_ssid=1
+	psk="YTC29048445"
+	priority=34
+}
+
+network={
+	ssid="平安饭店"
+	scan_ssid=1
+	psk=256366644
+	priority=34
+}
+
+network={
+	ssid=朗峰wifi
+	scan_ssid=1
+	psk=known123
+	priority=34
+}
